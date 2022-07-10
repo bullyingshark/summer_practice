@@ -8,6 +8,6 @@
 #include <time.h>
 //declaration of functions
 int cmp(const void* a, const void* b); 
-char replace1();
-char replace2();
+void replace1(char* mystring);
+void replace2(char* copystring);
 #endif

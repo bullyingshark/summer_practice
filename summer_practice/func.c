@@ -12,8 +12,13 @@ int cmp(const void* a, const void* b)
 }
 
 char mystring[300] = { 0 }, copystring[300]; //string declaration
-
-char replace1() {
+/*
+* Function 1 of mixing letters.
+*
+* @param mystring - input parameters
+* @return function returns nothing
+*/
+void replace1(char* mystring) {
     for (char* c = strtok(mystring, " "); c; c = strtok(NULL, " "))
     {
         for (int i = strlen(c); i-- > 0;)
@@ -24,15 +29,19 @@ char replace1() {
             c[j] = t;
         }
         printf("%s ", c);
-        return c;
     }
 }
 
-char replace2() {
+/*
+* Function 2 of mixing letters.
+*
+* @param copystring - input parameters
+* @return function returns nothing
+*/
+void replace2(char* copystring) {
     for (char* c = strtok(copystring, " "); c; c = strtok(NULL, " "))
     {
         qsort(c, strlen(c), 1, cmp);
         printf("%s ", c);
-        return c;
     }
 }

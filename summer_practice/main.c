@@ -15,4 +15,8 @@ int main()
     printf("Input line   : "); //line input
     gets_s(mystring, 300); 
     strcpy(copystring, mystring);
+    replace1(mystring);
+    printf_s("\n");
+    replace2(copystring);
+    printf_s("\n");
 }
