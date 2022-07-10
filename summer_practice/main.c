@@ -4,18 +4,19 @@
 * @date     2 липень 2022
 * @brief    Літня практика.
 *
-*Завдання: розробити програму, що створить анаграму.Букви повинні перемішуватись в межах слова.
+* Завдання: розробити програму, що створить анаграму.Букви повинні перемішуватись в межах слова.
 */
 #include "header.h"
 int main()
 {
-    srand(time(NULL));
+    srand(time(NULL)); //оголошення таймеру
 
-    char mystring[300] = { 0 }, copystring[300];
-    printf("Input line   : ");
-    gets_s(mystring, 300);
+    char mystring[300] = { 0 }, copystring[300]; //оголошення рядку
+    printf("Input line   : "); //введеня рядку
+    gets_s(mystring, 300); 
     strcpy(copystring, mystring);
 
+    //цикли для перемішування букв та послідовного виведення змінених рядків
     for (char* c = strtok(mystring, " "); c; c = strtok(NULL, " "))
     {
         for (int i = strlen(c); i-- > 0;)
