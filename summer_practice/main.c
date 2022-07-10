@@ -7,3 +7,13 @@
 *Завдання: розробити програму, що створить анаграму.Букви повинні перемішуватись в межах слова.
 */
 #include "header.h"
+int main()
+{
+    srand(time(NULL));
+
+    char mystring[300] = { 0 }, copystring[300];
+    printf("Input line   : ");
+    gets_s(mystring, 300);
+    strcpy(copystring, mystring);
+
+}
