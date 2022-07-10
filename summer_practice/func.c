@@ -1,19 +1,19 @@
 #include "header.h"
 /*
-* Фунція-вказівник.
+* Pointer function.
 *
-* @param  відсутні вхідні параметри
-* @param  відсутні вихідні параметри
-* @return функція нічого не повертає
+* @param missing input parameters
+* @param missing output parameters
+* @return function returns nothing
 */
 int cmp(const void* a, const void* b)
 {
     return *(const char*)a - *(const char*)b;
 }
 
-char mystring[300] = { 0 }, copystring[300]; //оголошення рядку
+char mystring[300] = { 0 }, copystring[300]; //string declaration
 
-int replace1() {
+char replace1() {
     for (char* c = strtok(mystring, " "); c; c = strtok(NULL, " "))
     {
         for (int i = strlen(c); i-- > 0;)
@@ -24,15 +24,15 @@ int replace1() {
             c[j] = t;
         }
         printf("%s ", c);
+        return c;
     }
-    puts("");
 }
 
-int replace2() {
+char replace2() {
     for (char* c = strtok(copystring, " "); c; c = strtok(NULL, " "))
     {
         qsort(c, strlen(c), 1, cmp);
         printf("%s ", c);
+        return c;
     }
-    puts("");
 }

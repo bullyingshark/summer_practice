@@ -1,13 +1,13 @@
 #ifndef HEADER_H
 #define HEADER_H
 #define _CRT_SECURE_NO_WARNINGS
-//підключення бібліотек
+//connection of libraries
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-//оголошення функцій
+//declaration of functions
 int cmp(const void* a, const void* b); 
-int replace1();
-int replace2();
+char replace1();
+char replace2();
 #endif

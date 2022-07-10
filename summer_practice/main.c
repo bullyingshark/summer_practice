@@ -1,18 +1,18 @@
 /*
-* @file     main.c
-* @author   Ганзера М.О., гр. 515
-* @date     2 липень 2022
-* @brief    Літня практика.
+* @file main.c
+* @author Ganzera M.O., gr. 515
+* @date July 2, 2022
+* @brief Summer internship.
 *
-* Завдання: розробити програму, що створить анаграму.Букви повинні перемішуватись в межах слова.
+* Task: develop a program that will create an anagram. The letters must be mixed within the word.
 */
 #include "header.h"
 int main()
 {
-    srand(time(NULL)); //оголошення таймеру
+    srand(time(NULL)); //timer announcement
 
-    char mystring[300] = { 0 }, copystring[300]; //оголошення рядку
-    printf("Input line   : "); //введеня рядку
+    char mystring[300] = { 0 }, copystring[300]; //string declaration
+    printf("Input line   : "); //line input
     gets_s(mystring, 300); 
     strcpy(copystring, mystring);
 }
