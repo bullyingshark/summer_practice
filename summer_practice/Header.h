@@ -6,5 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-int cmp(const void* a, const void* b); //оголошення функції
+//оголошення функцій
+int cmp(const void* a, const void* b); 
+int replace1();
+int replace2();
 #endif
