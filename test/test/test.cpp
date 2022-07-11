@@ -3,6 +3,8 @@
 #include <ctype.h>
 #include "..\..\summer_practice\func.c"
 
+
+
 TEST(test, replace1) {
 	char mystring[300] = { 0 }, copystring[300]; //string declaration
 	replace1(mystring);
@@ -11,6 +13,7 @@ TEST(test, replace1) {
 
 TEST(test, replace2) {
 	char mystring[300] = { 0 }, copystring[300]; //string declaration
+	memset(copystring, 0, 300);
 	replace2(copystring);
 	EXPECT_STREQ(copystring, "");
 }
