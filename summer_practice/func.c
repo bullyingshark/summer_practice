@@ -4,7 +4,7 @@
 *
 * @param missing input parameters
 * @param output - a,b
-* @return function returns nothing
+* @return function returns a,b
 */
 int cmp(const void* a, const void* b)
 {
