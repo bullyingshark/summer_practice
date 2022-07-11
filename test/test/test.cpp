@@ -3,7 +3,10 @@
 #include <ctype.h>
 #include "..\..\summer_practice\func.c"
 
-
+TEST(test, cmp) {
+	EXPECT_EQ(cmp, 1);
+	EXPECT_EQ(cmp, -1);
+}
 
 TEST(test, replace1) {
 	char mystring[300] = { 0 }, copystring[300]; //string declaration

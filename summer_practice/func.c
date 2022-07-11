@@ -6,11 +6,10 @@
 * @param output - a,b
 * @return function returns a,b
 */
-int cmp(const void* a, const void* b)
+int cmp(void* a, void* b)
 {
-    return *(const char*)a - *(const char*)b;
+    return *((char*)a) - *((char*)b);
 }
-
 char mystring[300] = { 0 }, copystring[300]; //string declaration
 /*
 * Function 1 of mixing letters.
