@@ -8,8 +8,9 @@ TEST(test, replace1) {
 	replace1(mystring);
 	EXPECT_STREQ(mystring, "");
 }
-/*
+
 TEST(test, replace2) {
-	EXPECT_EQ(replace2("hello world"),"ehllo dlorw");
+	char mystring[300] = { 0 }, copystring[300]; //string declaration
+	replace2(copystring);
+	EXPECT_STREQ(copystring, "");
 }
-*/

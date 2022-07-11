@@ -3,7 +3,7 @@
 * Pointer function.
 *
 * @param missing input parameters
-* @param missing output parameters
+* @param output - a,b
 * @return function returns nothing
 */
 int cmp(const void* a, const void* b)
