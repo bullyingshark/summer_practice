@@ -4,12 +4,22 @@
 #include "..\..\summer_practice\func.c"
 #define _CRT_SECURE_NO_WARNINGS
 
-TEST(test, cmp) {
-	EXPECT_EQ(cmp, 1);
-	EXPECT_EQ(cmp(0, 0), 0);
-	EXPECT_EQ(cmp, -1);
+TEST(test, cmp1) {
+	char str_one[] = { "hello" };
+	char str_two[] = { "hell" };
+	EXPECT_EQ(cmp(str_one, str_two), 1);
 }
 
+TEST(test, cmp2) {
+	char str_one[] = { "world" };
+	char str_two[] = { "world" };
+	EXPECT_EQ(cmp(str_one, str_two), 0);
+}
+TEST(test, cmp3) {
+	char str_one[] = { "hello worl" };
+	char str_two[] = { "hello world" };
+	EXPECT_EQ(cmp(str_one, str_two), -1);
+}
 TEST(test, replace1) {
 	char mystring[300] = { 0 }, copystring[300]; //string declaration
 	replace1(mystring);

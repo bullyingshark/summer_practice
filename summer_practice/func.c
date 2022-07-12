@@ -6,9 +6,9 @@
 * @param output - a,b
 * @return function returns a,b
 */
-int cmp(void* a, void* b)
+int cmp(const void* a, const void* b)
 {
-    return *((char*)a) - *((char*)b);
+    return *(const char*)a - *(const char*)b;
 }
 char mystring[300] = { 0 }, copystring[300]; //string declaration
 /*
