@@ -2,9 +2,11 @@
 #include <string.h>
 #include <ctype.h>
 #include "..\..\summer_practice\func.c"
+#define _CRT_SECURE_NO_WARNINGS
 
 TEST(test, cmp) {
 	EXPECT_EQ(cmp, 1);
+	EXPECT_EQ(cmp(0, 0), 0);
 	EXPECT_EQ(cmp, -1);
 }
 
