@@ -9,7 +9,6 @@ TEST(test, cmp1) {
 	char str_two[] = { "hell" };
 	EXPECT_EQ(cmp(str_one, str_two), 1);
 }
-
 TEST(test, cmp2) {
 	char str_one[] = { "world" };
 	char str_two[] = { "world" };
@@ -20,6 +19,7 @@ TEST(test, cmp3) {
 	char str_two[] = { "hello world" };
 	EXPECT_EQ(cmp(str_one, str_two), -1);
 }
+
 TEST(test, replace1) {
 	char mystring[300] = { 0 }, copystring[300]; //string declaration
 	replace1(mystring);

@@ -7,7 +7,7 @@
 #include <string.h>
 #include <time.h>
 //declaration of functions
-int cmp(void* a, void* b); 
+extern int cmp(void* a, void* b);
 void replace1(char* mystring);
 void replace2(char* copystring);
 #endif
