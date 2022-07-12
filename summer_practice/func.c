@@ -14,7 +14,8 @@ char mystring[300] = { 0 }, copystring[300]; //string declaration
 /*
 * Function 1 of mixing letters.
 *
-* @param mystring - input parameters
+* @param input parameters - mystring
+* @param output parameters - nothing
 * @return function returns nothing
 */
 void replace1(char* mystring) {
@@ -34,7 +35,8 @@ void replace1(char* mystring) {
 /*
 * Function 2 of mixing letters.
 *
-* @param copystring - input parameters
+* @param input parameters - copystring
+* @param output parameters - nothing
 * @return function returns nothing
 */
 void replace2(char* copystring) {
