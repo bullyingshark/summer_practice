@@ -7,17 +7,17 @@
 TEST(test, cmp1) {
 	char str_one[] = { "hello" };
 	char str_two[] = { "hell" };
-	EXPECT_EQ(cmp(str_one, str_two), 1);
+	EXPECT_EQ(!strcmp(str_one, str_two), 1);
 }
 TEST(test, cmp2) {
 	char str_one[] = { "world" };
 	char str_two[] = { "world" };
-	EXPECT_EQ(cmp(str_one, str_two), 0);
+	EXPECT_EQ(!strcmp(str_one, str_two), 0);
 }
 TEST(test, cmp3) {
 	char str_one[] = { "hello worl" };
 	char str_two[] = { "hello world" };
-	EXPECT_EQ(cmp(str_one, str_two), -1);
+	EXPECT_EQ(!strcmp(str_one, str_two), -1);
 }
 
 TEST(test, replace1) {
